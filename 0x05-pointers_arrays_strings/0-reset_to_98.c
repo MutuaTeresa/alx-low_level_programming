@@ -6,16 +6,7 @@
  *
  * Return: Always 0.
  */
-int main(void)
+void reset_to_98(int *n)
 {
-int i;
-int *n;
-
-i = 0;
-n = &i;
-printf("i=%d\n", i);
-reset_to_98(&i);
-*n = 98;
-printf("n=%d\n", n);
-return (0);
+	*n = 98;
 }
