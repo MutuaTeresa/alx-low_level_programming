@@ -65,7 +65,8 @@ int ln;
 
 for (ln = 0; argv[n][ln]; ln++)
 if (!isdigit(argv[n][ln]))
-{printf("Error\n");exit(98);
+{printf("Error\n");
+exit(98);
 }
 
 return (ln);
@@ -99,7 +100,8 @@ if (i < 0)
 if (addl > 0)
 {
 add = (nout[k] - '0') + addl;
-if (add > 9)nout[k - 1] = (add / 10) + '0';
+if (add > 9)
+nout[k - 1] = (add / 10) + '0';
 nout[k] = (add % 10) + '0';
 }
 i = ln1 - 1, j--, addl = 0, ca++, k = lnout - (1 + ca);
